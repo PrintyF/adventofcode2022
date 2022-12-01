@@ -26,4 +26,14 @@ describe('main', () => {
 
         });
     });
+    describe('two elves', () => {
+        describe('One item each', () => {
+            test('should return 2000', () => {
+                expect(main('2000\n\n1000')).toEqual(2000);
+            });
+            test('should return 3000', () => {
+                expect(main('2000\n\n3000')).toEqual(3000);
+            });
+        });
+    });
 });
