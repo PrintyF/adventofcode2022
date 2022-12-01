@@ -13,5 +13,11 @@ describe('main', () => {
                 expect(main('3000')).toEqual(3000);
             });
         });
+        describe('Two items', () => {
+            test('should return 2000', () => {
+                expect(main('1000\n1000')).toEqual(2000);
+            });
+
+        });
     });
 });
