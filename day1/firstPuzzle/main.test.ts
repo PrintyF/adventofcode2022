@@ -1,6 +1,6 @@
 import { main } from './main';
 
-describe('main', () => {
+describe('main test', () => {
     describe('One elf', () => {
         describe('One item', () => {
             test('should return 1000', () => {
