@@ -34,6 +34,9 @@ describe('main', () => {
             test('should return 3000', () => {
                 expect(main('2000\n\n3000')).toEqual(3000);
             });
+            test('should return 5000', () => {
+                expect(main('5000\n\n3000')).toEqual(5000);
+            });
         });
     });
 });
