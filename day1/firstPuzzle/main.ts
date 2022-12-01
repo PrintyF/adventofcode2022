@@ -1,9 +1,11 @@
 export function main(input: string) {
-    if (input === '1000\n1000')
-        return 2000;
-    if (input === '2000\n2000')
-        return 4000;
-    if (input === '3000\n3000')
-        return 6000;
+    if (input.includes('\n')) {
+        const arr: string[] = input.split('\n');
+        let sum = 0;
+        arr.forEach((el) => {
+            sum += Number.parseInt(el);
+        })
+        return sum;
+    }
     return Number.parseInt(input);
 }
