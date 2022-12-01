@@ -17,6 +17,9 @@ describe('main', () => {
             test('should return 2000', () => {
                 expect(main('1000\n1000')).toEqual(2000);
             });
+            test('should return 4000', () => {
+                expect(main('2000\n2000')).toEqual(4000);
+            });
 
         });
     });
